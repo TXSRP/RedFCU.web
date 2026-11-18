@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Troubleshooting — Red FCU</title>
+  <meta name="description" content="Checks for common Red FCU setup problems: package import, Ollama connection, models, performance, and what to include in a bug report.">
+  <meta name="theme-color" content="#080a10" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Red FCU">
+  <meta property="og:title" content="Troubleshooting — Red FCU">
+  <meta property="og:description" content="Checks for common Red FCU setup problems, from importing the package to getting Ollama and a local model running.">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/img/red-fcu-logo-192.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/staff.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <aside class="site-banner" aria-label="Important notice">
+    <p class="container"><strong>Independent software project.</strong> Red Federal Code Union (Red FCU) is <strong>not</strong> a bank, credit union, or financial institution, and offers no financial products or services. It is <strong>not</strong> a government body, law-enforcement agency, or federal authority, and is <strong>not</strong> affiliated with, endorsed by, or acting for any government, regulator, police force, or financial institution. The name is branding only. <a href="about.html#name">Full notice</a>.</p>
+  </aside>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Red FCU home">
+        <img src="assets/img/red-fcu-logo-96.png" alt="" width="28" height="28">
+        <span class="brand-name">Red <span class="brand-accent">FCU</span></span>
+      </a>
+
+      <div class="header-tools">
+        <button class="theme-toggle icon-btn" type="button" data-theme-toggle aria-label="Switch to light theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"></path>
+          </svg>
+        </button>
+
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+          <svg class="nav-icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false">
+            <path d="M3.5 6.5h17M3.5 12h17M3.5 17.5h17"></path>
+          </svg>
+          <svg class="nav-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false">
+            <path d="M5 5l14 14M19 5L5 19"></path>
+          </svg>
+          <span data-nav-label>Menu</span>
+        </button>
+      </div>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="getting-started.html">Getting Started</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="troubleshooting.html" aria-current="page">Troubleshooting</a></li>
+          <li><a href="community.html">Community &amp; Support</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <p class="kicker">Troubleshooting</p>
+        <h1>Troubleshooting</h1>
+        <p class="lede">The complete installation walkthrough lives in the Red FCU Discord. This page covers the checks that apply to any install, and what to send when you ask for help.</p>
+      </div>
+    </div>
+
+    <div class="page-body">
+      <div class="container">
+        <div class="prose">
+          <p>Red FCU is a Unity Editor extension that talks to a model running in Ollama. When something fails, check the three pieces separately: Unity and the package, then Ollama, then the model itself.</p>
+
+          <h2>Check the basics first</h2>
+          <ul>
+            <li>Windows 10 or Windows 11, 64-bit.</li>
+            <li>Unity 2022.3 or newer; Unity 2022.3 LTS and Unity 2023 LTS are recommended.</li>
+            <li>16&nbsp;GB of RAM minimum, 32&nbsp;GB recommended, and 100&nbsp;GB of disk space.</li>
+            <li>The package came from <a href="https://github.com/TXSRP/CodePilot/releases/latest" rel="noopener">the latest GitHub release<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a>, not from a mirror or a re-upload. The current release is <span data-release="v-version">v3.0.0</span>.</li>
+            <li>Ollama is installed and running.</li>
+            <li>The model you intend to use has been downloaded through Ollama.</li>
+          </ul>
+          <p>These are the published requirements. The project's <a href="https://github.com/TXSRP/CodePilot/blob/main/Computer%20Specs.md" rel="noopener">Computer Specs file<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a> is the full version and takes precedence if it differs from this page.</p>
+
+          <h2>The package will not import</h2>
+          <p>Download the <code>.unitypackage</code> from the latest release and confirm the download finished. The current file is <code data-release="package">Codepilot-AI.unitypackage</code>, about <span data-release="size">360&nbsp;KB</span>, and it should still end in <code>.unitypackage</code> when the download completes.</p>
+          <p>In Unity, use <strong>Assets &rsaquo; Import Package &rsaquo; Custom Package</strong> and select the file. <a href="getting-started.html">Getting Started</a> walks through the order, including installing Ollama and a model.</p>
+          <p>If Unity reports errors while importing, copy the exact message from the Console before changing anything else. Menu names and settings can differ between releases, so follow the project's Discord walkthrough for the release you installed if it differs from this page.</p>
+
+          <h2>Red FCU cannot reach a model</h2>
+          <p>Ollama has to be running. The project's README states that if Ollama is closed, Red FCU cannot communicate with the local model until it is running again.</p>
+          <p>Next, confirm the model is installed. <code>ollama list</code> shows the models available locally, and <code>ollama pull</code> downloads one. Those commands and Ollama's setup belong to <a href="https://docs.ollama.com/" rel="noopener">Ollama's documentation<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a>.</p>
+          <p>Red FCU does not bundle Ollama, and this site does not host it. If Ollama itself will not start or cannot download a model, use Ollama's own support channels rather than the Red FCU issue tracker.</p>
+
+          <h2>The model is slow or memory runs out</h2>
+          <p>Model performance and hardware requirements vary significantly with model size. A larger model needs more memory and generally takes longer to respond than a smaller one from the same list.</p>
+          <p>Closing other demanding applications, or trying a smaller supported model, can help. A GPU is not listed as a requirement, but speed still depends on the model and on your computer.</p>
+
+          <h2>Unity shows errors or nothing happens</h2>
+          <p>Check the Unity Console for the exact error, and check Ollama's own output as well. Note what you did immediately before the problem, whether Ollama was running, and which model was loaded.</p>
+          <p>Do not guess at a fix from an error code alone. The Discord walkthrough and the issue tracker are the places to confirm what a message means for your release.</p>
+
+          <h2>What to include in a report</h2>
+          <p>Bugs and feature requests belong in <a href="https://github.com/TXSRP/CodePilot/issues" rel="noopener">GitHub Issues<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a> or the <a href="https://discord.gg/SuBuRVS6PK" rel="noopener">Red FCU Discord<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a>. A useful report includes:</p>
+          <ul>
+            <li>What happened, and what you expected instead.</li>
+            <li>The steps that reproduce the problem.</li>
+            <li>The model you were using.</li>
+            <li>Your Unity version, and the Red FCU version you installed.</li>
+            <li>Logs and screenshots, where they help explain the problem.</li>
+          </ul>
+          <p>Security issues should be reported privately in the project's Discord, not in a public channel or a public issue. Share only the logs and screenshots needed to explain the problem.</p>
+
+          <div class="callout">
+            <h2>Still stuck?</h2>
+            <p>The Discord server is the project's main support channel and holds the complete installation walkthrough. GitHub Issues is better for bugs that other people can search later.</p>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="https://discord.gg/SuBuRVS6PK" rel="noopener">Join the Red FCU Discord<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a>
+              <a class="btn btn-secondary" href="community.html">Community &amp; Support</a>
+            </div>
+          </div>
+
+          <p>If a question is not about a failure, the <a href="faq.html">FAQ</a> covers cost, the license, models, hardware, and this website.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Red FCU home">
+            <img src="assets/img/red-fcu-logo-96.png" alt="" width="28" height="28">
+            <span class="brand-name">Red <span class="brand-accent">FCU</span></span>
+          </a>
+          <p>AI-assisted development inside the Unity Editor, with locally run models through Ollama.</p>
+          <p class="footer-note">A free project. No analytics, no accounts, no tracking on this site.</p>
+          <p class="footer-note">Independent project. Not a bank or financial institution. Not a government, law-enforcement, or federal agency.</p>
+        </div>
+
+        <nav class="footer-col" aria-label="Footer site navigation">
+          <h2>Site</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="getting-started.html">Getting Started</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="troubleshooting.html">Troubleshooting</a></li>
+            <li><a href="community.html">Community &amp; Support</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col">
+          <h2>Project</h2>
+          <ul>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="licensing.html">Licensing</a></li>
+            <li><a href="https://github.com/TXSRP/CodePilot" rel="noopener">GitHub repository<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a></li>
+            <li><a href="https://ollama.com/" rel="noopener">Ollama website<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Red FCU &middot; <span data-year>2026</span></p>
+        <p>Static site, hand-built. <a href="privacy.html">Privacy details</a>.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
