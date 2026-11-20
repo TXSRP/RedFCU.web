@@ -2,6 +2,6 @@
   "_help": "This file is the single source for the release details shown across the site. Every page fills its version, date, package name and size from here. Edit it, commit it, and GitHub Pages publishes the change. The staff editor (Left Alt + F2) writes a copy of this file for you.",
   "version": "3.0.0",
   "released": "2026-10-23",
-  "package": "Codepilot-AI.unitypackage",
+  "package": "RedFCU-AI.unitypackage",
   "sizeKB": 360
 }
