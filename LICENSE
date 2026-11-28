@@ -1,33 +1,33 @@
-Red FCU Free Use License (RFCUFUL) 1.0.0
+RedFCU Free Use License (RFCUFUL) 1.0.0
 
-License: Red FCU Free Use License (RFCUFUL)
+License: RedFCU Free Use License (RFCUFUL)
 Version: 1.0.0
 Release year: 2026
-Project: Red FCU — Unity Development Assistant
-Rights holder: Red FCU
+Project: RedFCU Unity Development Assistant
+Rights holder: RedFCU
 Repository: github.com/TXSRP/CodePilot
 
-Copyright (c) 2026 Red FCU
+Copyright (c) 2026 RedFCU
 
 1. Purpose
 
-The Red FCU Free Use License (RFCUFUL) governs the use, copying, modification, merging, private sharing, and other permitted activities involving Red FCU software.
+The RedFCU Free Use License (RFCUFUL) governs the use, copying, modification, merging, private sharing, and other permitted activities involving RedFCU software.
 
-Red FCU is intended to remain free to obtain and use. This license allows users to use, copy, modify, merge, and privately share the Software for permitted purposes while restricting unauthorized public publication, public redistribution, and sale of copies.
+RedFCU is intended to remain free to obtain and use. This license allows users to use, copy, modify, merge, and privately share the Software for permitted purposes while restricting unauthorized public publication, public redistribution, and sale of copies.
 
-This license also establishes separate protections for official Red FCU logos, wordmarks, icons, and designated branding assets.
+This license also establishes separate protections for official RedFCU logos, wordmarks, icons, and designated branding assets.
 
 By exercising permissions granted under this license, you agree to comply with its applicable terms and restrictions.
 
 2. Definitions
 
-"Red FCU" means the Red FCU Unity Development Assistant software and other materials expressly identified as being governed by this license.
+"RedFCU" means the RedFCU Unity Development Assistant software and other materials expressly identified as being governed by this license.
 
-"Red FCU" means the source code and other software components covered by this license.
+"RedFCU" means the source code and other software components covered by this license.
 
 "Rights Holder" means the person or legal entity that owns or is authorized to exercise the applicable rights in the relevant material.
 
-"Red FCU Branding" means official Red FCU logos, wordmarks, icons, branding images, and other designated visual identity assets owned by or legally controlled by the applicable rights holder.
+"RedFCU Branding" means official RedFCU logos, wordmarks, icons, branding images, and other designated visual identity assets owned by or legally controlled by the applicable rights holder.
 
 "Private Sharing" means providing a copy of the Software directly to friends or other individual recipients without charging a fee and without making the copy publicly available.
 
@@ -35,24 +35,24 @@ By exercising permissions granted under this license, you agree to comply with i
 
 "Modified Version" means a version of the Software that has been changed, adapted, extended, or combined with other code.
 
-"Official Repository" means the Red FCU repository maintained at: https://github.com/TXSRP/CodePilot/tree/main
+"Official Repository" means the RedFCU repository maintained at: https://github.com/TXSRP/CodePilot/tree/main
 
 3. Permitted use
 
 Subject to this license, you are permitted to:
 
-   a. Use Red FCU free of charge.
-   b. Make copies of Red FCU for your own use.
+   a. Use RedFCU free of charge.
+   b. Make copies of RedFCU for your own use.
    c. Modify the Software for your own use.
    d. Merge the Software with other code for your own use.
-   e. Use Red FCU for personal, educational, research, and commercial development activities.
-   f. Retain the original Red FCU Branding when using a permitted copy of the complete Software package.
-   g. Share copies of Red FCU privately with friends or other individual recipients, provided that the copies are shared free of charge and are not made publicly available.
-   h. Share the official Red FCU repository link and authorized official download links with other people.
+   e. Use RedFCU for personal, educational, research, and commercial development activities.
+   f. Retain the original RedFCU Branding when using a permitted copy of the complete Software package.
+   g. Share copies of RedFCU privately with friends or other individual recipients, provided that the copies are shared free of charge and are not made publicly available.
+   h. Share the official RedFCU repository link and authorized official download links with other people.
    i. Submit pull requests to the Official Repository, including bug fixes, improvements, code changes, documentation, and other contributions.
    j. Maintain private copies, private forks, backups, and Modified Versions for your own permitted use.
 
-These permissions do not grant ownership of Red FCU or its Branding.
+These permissions do not grant ownership of RedFCU or its Branding.
 
 Permission to use, copy, modify, merge, or privately share the Software does not grant permission to publicly redistribute copies.
 
@@ -60,40 +60,40 @@ Permission to use, copy, modify, merge, or privately share the Software does not
 
 Unless the Rights Holder grants prior written permission, you may NOT:
 
-   a. Publish or publicly redistribute copies of Red FCU.
-   b. Upload copies of Red FCU to public repositories, download websites, file-hosting services, or other public distribution platforms.
-   c. Sell, rent, sublicense, or charge a fee specifically for copies of Red FCU or Modified Versions.
-   d. Publish or publicly redistribute Modified Versions of Red FCU.
-   e. Repackage Red FCU and present it as your own software product.
-   f. Claim to be the original creator, owner, or official maintainer of Red FCU without authorization.
-   g. Create unauthorized public mirrors, download pages, or public releases containing copies of Red FCU.
+   a. Publish or publicly redistribute copies of RedFCU.
+   b. Upload copies of RedFCU to public repositories, download websites, file-hosting services, or other public distribution platforms.
+   c. Sell, rent, sublicense, or charge a fee specifically for copies of RedFCU or Modified Versions.
+   d. Publish or publicly redistribute Modified Versions of RedFCU.
+   e. Repackage RedFCU and present it as your own software product.
+   f. Claim to be the original creator, owner, or official maintainer of RedFCU without authorization.
+   g. Create unauthorized public mirrors, download pages, or public releases containing copies of RedFCU.
    h. Circumvent these restrictions by using another person, account, or organization to perform an activity prohibited by this license.
-   i. Charge another person specifically for providing a copy of Red FCU, including by disguising the charge as a packaging, access, or distribution fee.
+   i. Charge another person specifically for providing a copy of RedFCU, including by disguising the charge as a packaging, access, or distribution fee.
 
 These restrictions do NOT prohibit the private sharing expressly allowed under Section 3.
 
 Sharing a copy directly with a friend for free is permitted. Uploading that copy to a public website or repository for anyone to download is not permitted without prior written permission.
 
-Sharing an official Red FCU repository link or authorized download link is permitted and is not considered unauthorized Public Redistribution.
+Sharing an official RedFCU repository link or authorized download link is permitted and is not considered unauthorized Public Redistribution.
 
 Any redistribution authorized by the Rights Holder must comply with the conditions of that authorization.
 
-5. Red FCU branding
+5. RedFCU branding
 
-Red FCU Branding is expressly excluded from the general permissions granted under this license, except for the limited permissions expressly stated in this section.
+RedFCU Branding is expressly excluded from the general permissions granted under this license, except for the limited permissions expressly stated in this section.
 
-The complete Red FCU Software package may contain official branding. The original branding may remain intact when a user retains, uses, modifies, backs up, or privately shares a permitted copy of the complete package.
+The complete RedFCU Software package may contain official branding. The original branding may remain intact when a user retains, uses, modifies, backs up, or privately shares a permitted copy of the complete package.
 
-However, this license does NOT grant permission to independently extract, publish, redistribute, sell, or reuse Red FCU logos and branding images.
+However, this license does NOT grant permission to independently extract, publish, redistribute, sell, or reuse RedFCU logos and branding images.
 
 Unless separately authorized by the Rights Holder or otherwise permitted by applicable law, you may NOT:
 
-   a. Distribute Red FCU logos or branding images as standalone assets.
-   b. Use Red FCU Branding as the official identity of another product, project, organization, or service.
-   c. Claim Red FCU Branding as your own.
-   d. Falsely imply that a product or project is officially affiliated with, sponsored by, approved by, or endorsed by Red FCU.
+   a. Distribute RedFCU logos or branding images as standalone assets.
+   b. Use RedFCU Branding as the official identity of another product, project, organization, or service.
+   c. Claim RedFCU Branding as your own.
+   d. Falsely imply that a product or project is officially affiliated with, sponsored by, approved by, or endorsed by RedFCU.
    e. Remove or alter applicable ownership notices for the purpose of misrepresenting the origin of the Branding.
-   f. Sell or independently redistribute official Red FCU Branding.
+   f. Sell or independently redistribute official RedFCU Branding.
 
 Separate permission is required for uses of excluded Branding that are not otherwise permitted by applicable law.
 
@@ -111,13 +111,13 @@ Modified Versions remain subject to the publication and redistribution restricti
 
 You may not publicly publish or distribute a Modified Version without prior written permission from the Rights Holder.
 
-Modifying, merging, or extending the Software does not grant ownership of the original Red FCU materials or its Branding.
+Modifying, merging, or extending the Software does not grant ownership of the original RedFCU materials or its Branding.
 
 This license does not grant rights to third-party code beyond the rights available under the applicable third-party licenses.
 
 7. Enforcement and rights protection
 
-Where legally justified, the Rights Holder reserves the right to choose appropriate actions in response to unauthorized publication, public redistribution, sale, or misuse of protected Red FCU Branding.
+Where legally justified, the Rights Holder reserves the right to choose appropriate actions in response to unauthorized publication, public redistribution, sale, or misuse of protected RedFCU Branding.
 
 Depending on the circumstances and applicable law, possible actions include:
 
@@ -137,31 +137,31 @@ Nothing in this section authorizes harassment, false claims, unlawful retaliatio
 
 8. Third-party materials
 
-This license does not override the licenses or rights governing third-party libraries, assets, or other materials included with or referenced by Red FCU.
+This license does not override the licenses or rights governing third-party libraries, assets, or other materials included with or referenced by RedFCU.
 
 Unity Engine and Unity Technologies materials remain subject to their respective terms.
 
 Third-party libraries, models, assets, and other components may have their own distribution and licensing requirements.
 
-You are responsible for complying with applicable third-party license requirements when using Red FCU.
+You are responsible for complying with applicable third-party license requirements when using RedFCU.
 
 Nothing in this license grants rights to third-party materials beyond the rights available under their respective licenses.
 
 9. Contributions and pull requests
 
-Contributions to Red FCU may be submitted through pull requests to the Official Repository.
+Contributions to RedFCU may be submitted through pull requests to the Official Repository.
 
 Contributions may include bug fixes, improvements, code changes, examples, documentation, and other project-related materials.
 
 The Rights Holder may review, request changes to, accept, or reject contributions at their discretion.
 
-Before a contribution is incorporated into Red FCU, the applicable licensing terms for that contribution must be established.
+Before a contribution is incorporated into RedFCU, the applicable licensing terms for that contribution must be established.
 
 By submitting a contribution, you confirm that you have the rights necessary to submit it and that you are not knowingly submitting material that unlawfully infringes another party's rights.
 
-Submitting a contribution does not automatically transfer ownership of it or grant permission to publish or redistribute Red FCU outside the permissions of this license.
+Submitting a contribution does not automatically transfer ownership of it or grant permission to publish or redistribute RedFCU outside the permissions of this license.
 
-Unless a separate written agreement states otherwise, accepted contributions must be made available under terms compatible with the licensing terms applicable to the relevant Red FCU materials, to the extent the contributor has the legal right to grant those permissions.
+Unless a separate written agreement states otherwise, accepted contributions must be made available under terms compatible with the licensing terms applicable to the relevant RedFCU materials, to the extent the contributor has the legal right to grant those permissions.
 
 Contributions submitted through the Official Repository may be publicly displayed as part of the project and its development history.
 
@@ -195,7 +195,7 @@ The Rights Holder may reinstate permission in writing.
 
 13. License changes
 
-The Rights Holder may publish updated versions of the Red FCU Free Use License for future releases.
+The Rights Holder may publish updated versions of the RedFCU Free Use License for future releases.
 
 Each release should identify the license version that applies to it.
 
@@ -211,22 +211,22 @@ GitHub Issues: https://github.com/TXSRP/CodePilot/issues
 
 Email: CodePilot-Unity.AI@proton.me
 
-Requests to publish or publicly redistribute Red FCU must identify the intended use and distribution method.
+Requests to publish or publicly redistribute RedFCU must identify the intended use and distribution method.
 
-Requests to use excluded Red FCU Branding must identify the relevant assets and intended use.
+Requests to use excluded RedFCU Branding must identify the relevant assets and intended use.
 
 Permission for one activity does not automatically authorize other restricted activities.
 
 15. License identity
 
-This license is named the Red FCU Free Use License (RFCUFUL), Version 1.0.0.
+This license is named the RedFCU Free Use License (RFCUFUL), Version 1.0.0.
 
-It is a custom license created for Red FCU. It is not the MIT License, Apache License 2.0, GNU General Public License, or another standard open-source license.
+It is a custom license created for RedFCU. It is not the MIT License, Apache License 2.0, GNU General Public License, or another standard open-source license.
 
 Because this license restricts public redistribution and the sale of copies, it should be described as a custom source-available license rather than an OSI-approved open-source license.
 
-Red FCU may be free to obtain and use under this license without being unrestricted open-source software.
+RedFCU may be free to obtain and use under this license without being unrestricted open-source software.
 
-End of Red FCU Free Use License (RFCUFUL) 1.0.0
+End of RedFCU Free Use License (RFCUFUL) 1.0.0
 
-Copyright (c) 2026 Red FCU. All rights reserved, subject to the permissions expressly granted in this license.
+Copyright (c) 2026 RedFCU. All rights reserved, subject to the permissions expressly granted in this license.
