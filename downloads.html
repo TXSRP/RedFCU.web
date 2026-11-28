@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Downloads RedFCU</title>
+  <meta name="description" content="Download the latest RedFCU release for the Unity Editor from GitHub, and install Ollama for the local models it uses.">
+  <meta name="theme-color" content="#080a10" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="RedFCU">
+  <meta property="og:title" content="Downloads RedFCU">
+  <meta property="og:description" content="Get the latest RedFCU release for the Unity Editor from GitHub, plus the separate Ollama download for local models.">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/img/red-fcu-logo-192.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/staff.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <aside class="site-banner" aria-label="Important notice">
+    <p class="container"><strong>Independent software project.</strong> Red Federal Code Union (RedFCU) is <strong>not</strong> a bank, credit union, or financial institution, and offers no financial products or services. It is <strong>not</strong> a government body, law-enforcement agency, or federal authority, and is <strong>not</strong> affiliated with, endorsed by, or acting for any government, regulator, police force, or financial institution. The name is branding only. RedFCU may offer project verification, creator verification, copyright assistance, project protection, and recommendation programs. These programs are informational and administrative in nature only. They do not constitute legal services, legal advice, legal representation, government certification, copyright registration, trademark registration, law-enforcement activity, or any determination of legal rights. <a href="about.html#name">Full notice</a>.</p>
+  </aside>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="home.html" aria-label="RedFCU home">
+        <img src="assets/img/red-fcu-logo-96.png" alt="" width="28" height="28">
+        <span class="brand-name">Red <span class="brand-accent">FCU</span></span>
+      </a>
+
+      <div class="header-tools">
+        <button class="theme-toggle icon-btn" type="button" data-theme-toggle aria-label="Switch to light theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"></path>
+          </svg>
+        </button>
+
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+          <svg class="nav-icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false">
+            <path d="M3.5 6.5h17M3.5 12h17M3.5 17.5h17"></path>
+          </svg>
+          <svg class="nav-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false">
+            <path d="M5 5l14 14M19 5L5 19"></path>
+          </svg>
+          <span data-nav-label>Menu</span>
+        </button>
+      </div>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="getting-started.html">Getting Started</a></li>
+          <li><a href="downloads.html" aria-current="page">Downloads</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="troubleshooting.html">Troubleshooting</a></li>
+          <li><a href="community.html">Community &amp; Support</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <p class="kicker">Downloads</p>
+        <h1>Downloads</h1>
+        <p class="lede">RedFCU is free to use and published on GitHub under the RedFCU Free Use License. Ollama, the tool that runs its models, is a separate download from a separate project.</p>
+      </div>
+    </div>
+
+    <div class="page-body">
+      <div class="container">
+        <div class="download-list">
+          <!--
+            OWNER NOTE — RedFCU plugin
+            The primary button points at GitHub's "latest release" address, so it
+            keeps working after every new release. The version, date, package name
+            and size below are filled from assets/data/release.json; edit that file
+            (or use the staff panel: Left Alt + F2) instead of this page.
+          -->
+          <section class="download-card" aria-labelledby="download-redfcu">
+            <div class="download-head">
+              <div>
+                <h2 id="download-redfcu">RedFCU plugin</h2>
+                <p class="download-sub">Unity Editor plugin &middot; <span data-release="v-version">v3.0.0</span></p>
+              </div>
+              <span class="pill pill-ok">Available</span>
+            </div>
+            <p>RedFCU is distributed as a Unity package from the project's GitHub repository. The current release is <strong data-release="v-version">v3.0.0</strong>, published on <span data-release="date">23 October 2026</span> as <code data-release="package">Codepilot-AI.unitypackage</code> (about <span data-release="size">360&nbsp;KB</span>).</p>
+            <p>The download button opens the newest published release, together with its notes and older versions, so it stays correct when a new version is released.</p>
+            <div class="download-actions">
+              <a class="btn btn-primary" href="https://github.com/TXSRP/CodePilot/releases/latest" rel="noopener">Download latest release<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a>
+              <a class="btn btn-secondary" href="https://github.com/TXSRP/CodePilot/releases" rel="noopener">All releases &amp; notes<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a>
+              <a class="btn btn-secondary" href="https://github.com/TXSRP/CodePilot" rel="noopener">Source repository<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a>
+            </div>
+            <p class="note">GitHub hosts the package. This site stores no copy of it and does not link to mirror sites. A Unity Asset Store listing is in preparation and there is no store link yet.</p>
+            <p class="note">The GitHub repository and the package file name still use the project's earlier name, so every link here points at the repository that actually exists. The license itself is the RedFCU Free Use License.</p>
+            <p class="note">Free to use, but not open source: the RedFCU Free Use License allows private use and private sharing while restricting public redistribution and sale. <a href="licensing.html">Read the license summary and full text</a>.</p>
+          </section>
+
+          <section class="download-card" aria-labelledby="download-requirements">
+            <div class="download-head">
+              <div>
+                <h2 id="download-requirements">What RedFCU needs</h2>
+                <p class="download-sub">From the project's Computer Specs.md</p>
+              </div>
+            </div>
+            <p>The project publishes its own minimum and recommended requirements. They are summarised here; the repository file is the full version and takes precedence if the two ever differ.</p>
+            <dl class="fact-list">
+              <div class="fact">
+                <dt>Unity</dt>
+                <dd>2022.3 or newer. 2022.3 LTS or 2023 LTS is recommended.</dd>
+              </div>
+              <div class="fact">
+                <dt>Operating system</dt>
+                <dd>Windows 10 or Windows 11, 64-bit. The project lists no other platform.</dd>
+              </div>
+              <div class="fact">
+                <dt>Memory</dt>
+                <dd>16&nbsp;GB minimum. 32&nbsp;GB is recommended for the larger 7B to 33B models.</dd>
+              </div>
+              <div class="fact">
+                <dt>Graphics</dt>
+                <dd>No GPU is required, because CPU inference is supported. A dedicated GPU speeds up larger models.</dd>
+              </div>
+              <div class="fact">
+                <dt>Disk space</dt>
+                <dd>100&nbsp;GB free or more. Local models account for most of that space.</dd>
+              </div>
+              <div class="fact">
+                <dt>Models</dt>
+                <dd>Qwen 2.5 Coder 7B, 14B, and 32B, plus DeepSeek LLM 7B and 33B, are the models the project lists as supported.</dd>
+              </div>
+            </dl>
+            <div class="download-actions">
+              <a class="btn btn-secondary" href="https://github.com/TXSRP/CodePilot/blob/main/Computer%20Specs.md" rel="noopener">Read Computer Specs.md<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a>
+            </div>
+            <p class="note">Model performance and hardware needs vary with the model you choose. A model that fits the minimum specification will not necessarily feel fast.</p>
+          </section>
+
+          <section class="download-card" aria-labelledby="download-ollama">
+            <div class="download-head">
+              <div>
+                <h2 id="download-ollama">Ollama</h2>
+                <p class="download-sub">Third-party &middot; Not RedFCU</p>
+              </div>
+              <span class="pill">External</span>
+            </div>
+            <p>Ollama is the separate tool that RedFCU uses for locally run models. Install it from Ollama's official site before configuring a model for the plugin.</p>
+            <div class="download-actions">
+              <a class="btn btn-primary" href="https://ollama.com/download" rel="noopener">Ollama download page<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a>
+              <a class="btn btn-secondary" href="https://ollama.com/download/OllamaSetup.exe" rel="noopener">Windows installer<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a>
+            </div>
+            <p class="note">The Windows installer (OllamaSetup.exe) is provided and hosted by Ollama. Version, file size, and system requirements are set by Ollama and are not published on this site. This site hosts no copy of the installer.</p>
+          </section>
+        </div>
+
+        <div class="block-note">
+          <h2>About this page</h2>
+          <p>RedFCU links go to the project's own GitHub releases, and Ollama links go to Ollama's own site. Nothing here is a mirror or a third-party download portal.</p>
+          <p>The version, date, package name and size in the RedFCU card are read from a single data file, <code>assets/data/release.json</code>, so they cannot drift apart across pages. Because the download button points at GitHub's newest release, it also keeps working if a newer version appears before that file is updated.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="home.html" aria-label="RedFCU home">
+            <img src="assets/img/red-fcu-logo-96.png" alt="" width="28" height="28">
+            <span class="brand-name">Red <span class="brand-accent">FCU</span></span>
+          </a>
+          <p>AI-assisted development inside the Unity Editor, with locally run models through Ollama.</p>
+          <p class="footer-note">A free project. No analytics, no accounts, no tracking on this site.</p>
+          <p class="footer-note">Independent project. Not a bank or financial institution. Not a government, law-enforcement, or federal agency.</p>
+        </div>
+
+        <nav class="footer-col" aria-label="Footer site navigation">
+          <h2>Site</h2>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="getting-started.html">Getting Started</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="troubleshooting.html">Troubleshooting</a></li>
+            <li><a href="community.html">Community &amp; Support</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col">
+          <h2>Project</h2>
+          <ul>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="licensing.html">Licensing</a></li>
+            <li><a href="index.html">Public resources</a></li>
+            <li><a href="https://github.com/TXSRP/CodePilot" rel="noopener">GitHub repository<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a></li>
+            <li><a href="https://ollama.com/" rel="noopener">Ollama website<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 RedFCU. All rights reserved for original website content, design, graphics, and branding, except where otherwise stated. Unauthorized reproduction or redistribution of protected website materials is prohibited without permission.</p>
+        <p>RedFCU &middot; <span data-year>2026</span></p>
+        <p>Static site, hand-built. <a href="privacy.html">Privacy details</a>.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

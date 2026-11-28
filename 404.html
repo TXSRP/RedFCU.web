@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found RedFCU</title>
+  <meta name="description" content="This page could not be found. Return to the RedFCU homepage or open one of the main pages.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#080a10" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="RedFCU">
+  <meta property="og:title" content="Page not found RedFCU">
+  <meta property="og:description" content="This page could not be found. Return to the RedFCU homepage or open one of the main pages.">
+  <script>
+    /*
+      GitHub Pages answers a missing address at any depth by sending this file,
+      so "assets/css/styles.css" could resolve inside the missing path instead
+      of at the site root. When the address is deeper than one folder, point the
+      document's base at that first folder before the links below are parsed.
+
+      Opened straight from disk (file://) the step is skipped, because a path
+      without a leading slash already works there: the file sits in the folder
+      that holds assets/.
+    */
+    (function () {
+      var parts = location.pathname.split("/");
+
+      if (location.protocol === "file:" || parts.length <= 3 || !parts[1]) {
+        return;
+      }
+
+      var base = document.createElement("base");
+      base.setAttribute("href", location.origin + "/" + parts[1] + "/");
+      document.head.appendChild(base);
+    })();
+  </script>
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/img/red-fcu-logo-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/staff.js" defer></script>
+</head>
+<!--
+  404 page note
+  Every link on this page is relative, so the page renders both from the site
+  folder and from GitHub Pages. The small script above supplies the site root
+  only when Pages is answering for a missing address deeper than one folder.
+-->
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <aside class="site-banner" aria-label="Important notice">
+    <p class="container"><strong>Independent software project.</strong> Red Federal Code Union (RedFCU) is <strong>not</strong> a bank, credit union, or financial institution, and offers no financial products or services. It is <strong>not</strong> a government body, law-enforcement agency, or federal authority, and is <strong>not</strong> affiliated with, endorsed by, or acting for any government, regulator, police force, or financial institution. The name is branding only. RedFCU may offer project verification, creator verification, copyright assistance, project protection, and recommendation programs. These programs are informational and administrative in nature only. They do not constitute legal services, legal advice, legal representation, government certification, copyright registration, trademark registration, law-enforcement activity, or any determination of legal rights. <a href="about.html#name">Full notice</a>.</p>
+  </aside>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="home.html" aria-label="RedFCU home">
+        <img src="assets/img/red-fcu-logo-96.png" alt="" width="28" height="28">
+        <span class="brand-name">Red <span class="brand-accent">FCU</span></span>
+      </a>
+
+      <div class="header-tools">
+        <button class="theme-toggle icon-btn" type="button" data-theme-toggle aria-label="Switch to light theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"></path>
+          </svg>
+        </button>
+
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+          <svg class="nav-icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false">
+            <path d="M3.5 6.5h17M3.5 12h17M3.5 17.5h17"></path>
+          </svg>
+          <svg class="nav-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false">
+            <path d="M5 5l14 14M19 5L5 19"></path>
+          </svg>
+          <span data-nav-label>Menu</span>
+        </button>
+      </div>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="getting-started.html">Getting Started</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="troubleshooting.html">Troubleshooting</a></li>
+          <li><a href="community.html">Community &amp; Support</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="error-main">
+      <div class="container">
+        <div class="error-card">
+          <p class="pill error-pill"><span class="dot" aria-hidden="true"></span>Error 404 &middot; page not found</p>
+
+          <p class="error-code" aria-hidden="true">404</p>
+
+          <h1><span class="sr-only">404 &mdash; </span>This page isn't here</h1>
+
+          <p class="error-lede">The address may be mistyped, or the page may have moved. Your browser reached the RedFCU site, but there is nothing at this address.</p>
+
+          <div class="btn-row error-actions">
+            <a class="btn btn-primary" href="home.html">Back to home</a>
+            <a class="btn btn-secondary" href="downloads.html">Downloads</a>
+          </div>
+
+          <nav class="error-links" aria-label="Popular pages">
+            <p class="error-links-label">Popular pages</p>
+            <ul>
+              <li>
+                <a href="getting-started.html">
+                  <span class="error-link-title">Getting Started</span>
+                  <span class="error-link-note">Install, connect Ollama, first run</span>
+                </a>
+              </li>
+              <li>
+                <a href="faq.html">
+                  <span class="error-link-title">FAQ</span>
+                  <span class="error-link-note">Common questions, answered plainly</span>
+                </a>
+              </li>
+              <li>
+                <a href="troubleshooting.html">
+                  <span class="error-link-title">Troubleshooting</span>
+                  <span class="error-link-note">Fixes for errors and dead ends</span>
+                </a>
+              </li>
+              <li>
+                <a href="community.html">
+                  <span class="error-link-title">Community &amp; Support</span>
+                  <span class="error-link-note">Where to ask for help</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="home.html" aria-label="RedFCU home">
+            <img src="assets/img/red-fcu-logo-96.png" alt="" width="28" height="28">
+            <span class="brand-name">Red <span class="brand-accent">FCU</span></span>
+          </a>
+          <p>AI-assisted development inside the Unity Editor, with locally run models through Ollama.</p>
+          <p class="footer-note">A free project. No analytics, no accounts, no tracking on this site.</p>
+          <p class="footer-note">Independent project. Not a bank or financial institution. Not a government, law-enforcement, or federal agency.</p>
+        </div>
+
+        <nav class="footer-col" aria-label="Footer site navigation">
+          <h2>Site</h2>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="getting-started.html">Getting Started</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="troubleshooting.html">Troubleshooting</a></li>
+            <li><a href="community.html">Community &amp; Support</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col">
+          <h2>Project</h2>
+          <ul>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="licensing.html">Licensing</a></li>
+            <li><a href="index.html">Public resources</a></li>
+            <li><a href="https://github.com/TXSRP/CodePilot" rel="noopener">GitHub repository<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a></li>
+            <li><a href="https://ollama.com/" rel="noopener">Ollama website<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 RedFCU. All rights reserved for original website content, design, graphics, and branding, except where otherwise stated. Unauthorized reproduction or redistribution of protected website materials is prohibited without permission.</p>
+        <p>RedFCU &middot; <span data-year>2026</span></p>
+        <p>Static site, hand-built. <a href="privacy.html">Privacy details</a>.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
