@@ -1,6 +1,6 @@
-# Red FCU website
+# RedFCU website
 
-The official static website for **Red FCU**, a Unity Editor AI assistant project with support for locally run models through Ollama.
+The official static website for **RedFCU**, a Unity Editor AI assistant project with support for locally run models through Ollama.
 
 The site is plain HTML, CSS, and vanilla JavaScript. There is no framework, package manager, build step, backend, analytics, or external service. It can be uploaded to GitHub as-is and served with GitHub Pages.
 
@@ -10,14 +10,14 @@ The site is plain HTML, CSS, and vanilla JavaScript. There is no framework, pack
 
 | File | Page | Purpose |
 | --- | --- | --- |
-| `index.html` | Welcome | Pre-entry public resources screen. Crisis contacts, food, housing, healthcare, financial help, family safety, and general services. The "Continue to Red FCU" button at the very bottom opens `home.html`. |
+| `index.html` | Welcome | Pre-entry public resources screen. Crisis contacts, food, housing, healthcare, financial help, family safety, and general services. The "Continue to RedFCU" button at the very bottom opens `home.html`. |
 | `home.html` | Home | Introduction, Unity/Ollama relationship, setup flow, current release. |
 | `getting-started.html` | Getting Started | Import the package, install Ollama, pull a model, connect the two. |
-| `downloads.html` | Downloads | Latest Red FCU release from GitHub, a requirements summary, and Ollama listed separately. |
+| `downloads.html` | Downloads | Latest RedFCU release from GitHub, a requirements summary, and Ollama listed separately. |
 | `faq.html` | FAQ | Cost and license, Unity versions, models, hardware, privacy, sharing, and what the name does and does not mean. |
 | `troubleshooting.html` | Troubleshooting | Setup checks, Ollama connection, performance, and what to include in a report. |
-| `community.html` | Community & Support | The Red FCU Discord and GitHub Issues, plus Ollama's own resources. |
-| `programs.html` | Programs | The Red FCU programs, marked "Listed soon available", "Open for applications", or "Closed until further notice". |
+| `community.html` | Community & Support | The RedFCU Discord and GitHub Issues, plus Ollama's own resources. |
+| `programs.html` | Programs | The RedFCU programs, marked "Listed soon available", "Open for applications", or "Closed until further notice". |
 | `creator-apply.html` | Verified Creator application | The public Verified Creator form. Builds a downloadable JSON application in the browser and sends nothing. |
 | `community-apply.html` | Verified Community application | The public Verified Community form. Builds a downloadable JSON application in the browser and sends nothing. |
 | `community-hosting.html` | Community Hosting | A planned managed hosting program for approved Discord bots, software projects, and community projects. Closed until further notice, with no form or application route. |
@@ -28,9 +28,9 @@ The site is plain HTML, CSS, and vanilla JavaScript. There is no framework, pack
 
 `index.html` is deliberately not the project homepage any more. It is the welcome and public-resources screen, and every "Home" link on the site points to `home.html`. Keep those two roles separate when editing: a change to the welcome portal belongs in `index.html`, and a change to the product homepage belongs in `home.html`.
 
-Every page also carries a legal notice above the header. It states that Red FCU is an independent software project; that it is not a bank, credit union, or financial institution; that it is not a government body, law-enforcement agency, or federal authority; and that it is not affiliated with or endorsed by any government, regulator, police force, or financial institution. It also states that the project may offer verification, protection, copyright-assistance, and recommendation programs, and that those programs are informational and administrative only. Keep that notice on new pages. It is a disclaimer, not decoration.
+Every page also carries a legal notice above the header. It states that RedFCU is an independent software project; that it is not a bank, credit union, or financial institution; that it is not a government body, law-enforcement agency, or federal authority; and that it is not affiliated with or endorsed by any government, regulator, police force, or financial institution. It also states that the project may offer verification, protection, copyright-assistance, and recommendation programs, and that those programs are informational and administrative only. Keep that notice on new pages. It is a disclaimer, not decoration.
 
-Privacy and Licensing are linked from the footer on every page. The footer also carries a copyright line: "© 2026 Red FCU. All rights reserved for original website content, design, graphics, and branding, except where otherwise stated. Unauthorized reproduction or redistribution of protected website materials is prohibited without permission." Keep it on new pages, and keep the Licensing page's "This website's content" paragraph consistent with it.
+Privacy and Licensing are linked from the footer on every page. The footer also carries a copyright line: "© 2026 RedFCU. All rights reserved for original website content, design, graphics, and branding, except where otherwise stated. Unauthorized reproduction or redistribution of protected website materials is prohibited without permission." Keep it on new pages, and keep the Licensing page's "This website's content" paragraph consistent with it.
 
 ## 2. Files and folders
 
@@ -83,7 +83,7 @@ RedFCU.web/
 - `assets/js/staff.js` — fills the release version, date, package name, and size from `release.json`, builds the hidden staff panel (Left Alt + F2), and provides the admin/owner Verified Creator and Verified Community review tools plus the verification withdrawal message tool. Nothing is sent anywhere.
 - `assets/data/release.json` — the current release details. Edit this one file after a release; every page reads it.
 - `assets/data/staff.json` — the public allowlist for the staff panel, with instructions inside the file.
-- `assets/img/` — the Red FCU emblem, supplied by the owner. `red-fcu-logo.png` is the 512px master with the corners masked to transparency; the other four files are generated sizes for the header, footer, browser tab, and iOS home screen. Replace the master and regenerate the rest if the artwork changes. `redfcu-verified-creator-badge.png` and `redfcu-verified-community-badge.png` are the two badge images supplied by the owner; the review tool offers them for download unchanged and never generates a badge. `COMMUNITY_BADGE_AVAILABLE` in `staff.js` is `true` because the community PNG is present. If that file is ever removed, set the constant back to `false` so the panel shows a note instead of requesting a missing file.
+- `assets/img/` — the RedFCU emblem, supplied by the owner. `red-fcu-logo.png` is the 512px master with the corners masked to transparency; the other four files are generated sizes for the header, footer, browser tab, and iOS home screen. Replace the master and regenerate the rest if the artwork changes. `redfcu-verified-creator-badge.png` and `redfcu-verified-community-badge.png` are the two badge images supplied by the owner; the review tool offers them for download unchanged and never generates a badge. `COMMUNITY_BADGE_AVAILABLE` in `staff.js` is `true` because the community PNG is present. If that file is ever removed, set the constant back to `false` so the panel shows a note instead of requesting a missing file.
 - The homepage orbit illustration is original inline SVG, drawn with the site's own colors. All other decoration is CSS.
 - The welcome and programs pages carry a hidden inline SVG sprite at the bottom of each file (symbols named `i-mental`, `i-food`, `i-home`, and so on). Custom icons are referenced with `<use href="#i-…">`. There are no emoji and no icon fonts anywhere: every glyph is a drawn SVG so it renders identically on Windows, macOS, Linux, Android, and iOS.
 
@@ -94,7 +94,7 @@ Every page uses the same legal notice, header, navigation, and footer. Navigatio
 | | |
 | --- | --- |
 | Long name | **Red Federal Code Union** |
-| Short name | **Red FCU** |
+| Short name | **RedFCU** |
 | Where they appear | Every `<title>`, meta description, Open Graph tag, the header wordmark, the footer, the About page, and the FAQ |
 
 The wordmark renders as `Red <span class="brand-accent">FCU</span>`. `Red Federal Code Union` is spelled out in full on `about.html` and `faq.html`, where a visitor is most likely to ask what the name means, and the About page also explains why the name does not make this a financial or government body.
@@ -108,7 +108,7 @@ The long name uses words, but the site only ever renders the **short** name in t
 - `CodePilot-Unity.AI@proton.me` — the real contact address.
 - `codepilot-theme`, `codepilot-staff`, `codepilot-release-draft` — local storage keys. Renaming them would silently sign staff out and reset visitor themes.
 
-The license is not on that list. It is the **Red FCU Free Use License (RFCUFUL) 1.0.0**, reproduced in full on `licensing.html`. Only the repository URL, the package file name, the contact address, and the storage keys still carry the earlier name.
+The license is not on that list. It is the **RedFCU Free Use License (RFCUFUL) 1.0.0**, reproduced in full on `licensing.html`. Only the repository URL, the package file name, the contact address, and the storage keys still carry the earlier name.
 
 `downloads.html` carries a short note saying that the repository and the package file name still use the earlier name, so the mismatch is explained rather than hidden. `licensing.html` reproduces the license text as supplied by the rights holder.
 
@@ -116,7 +116,7 @@ The deployment path is `RedFCU.web` in the folder name. Every page links relativ
 
 ### The welcome and public-resources screen
 
-`index.html` is a pre-entry screen, not product documentation. Visitors read the resource listings and reach the **Continue to Red FCU** button at the very bottom, which opens `home.html`. Nothing else on that page links to `home.html`.
+`index.html` is a pre-entry screen, not product documentation. Visitors read the resource listings and reach the **Continue to RedFCU** button at the very bottom, which opens `home.html`. Nothing else on that page links to `home.html`.
 
 - The sections run in this order: mental health, food, housing, healthcare, financial, family safety, general help, then the safety notice. Each has an `id`, so the jump bar near the top works without JavaScript.
 - Each listing is an `<article class="resource-card">`: a country tag, the service name, any phone or text numbers, the supplied description, the official link, and a badge. Badge classes are `badge-confirmed` and `badge-unverified`.
@@ -171,12 +171,12 @@ Notes:
 3. Select everything **inside** the folder (all HTML files, `README.md`, and the `assets` folder), then drag it into the GitHub upload area.
    - `index.html` must end up at the **top level** of the repository, not inside a subfolder.
 4. Wait for all files to appear in the upload list. The `assets/css` and `assets/js` folders must keep their structure.
-5. Enter a short commit message, such as `Add Red FCU website`.
+5. Enter a short commit message, such as `Add RedFCU website`.
 6. Select **Commit changes**.
 
 To confirm the upload worked, the repository file list should show `index.html`, the other HTML pages, `README.md`, and an `assets` folder at the top level.
 
-Two of those pages are new in this version: `home.html` (the project homepage that the welcome screen leads to) and `programs.html`. If either one is missing, the navigation and the **Continue to Red FCU** button will lead to a 404. `creator-apply.html`, `community-apply.html`, and `community-hosting.html` are also reached from Programs; if any is missing, those links will lead to a 404.
+Two of those pages are new in this version: `home.html` (the project homepage that the welcome screen leads to) and `programs.html`. If either one is missing, the navigation and the **Continue to RedFCU** button will lead to a 404. `creator-apply.html`, `community-apply.html`, and `community-hosting.html` are also reached from Programs; if any is missing, those links will lead to a 404.
 
 ## 6. Enable GitHub Pages
 
@@ -190,7 +190,7 @@ Two of those pages are new in this version: `home.html` (the project homepage th
    `https://YOUR-USERNAME.github.io/RedFCU.web/`
 
 7. Open that address and click through every page. Test the mobile menu and the theme toggle.
-8. The address opens the welcome screen (`index.html`). Scroll to the very bottom and use **Continue to Red FCU** to reach `home.html`. That button and the footer's **Public resources** link are the only doors between the two halves of the site, so check both directions.
+8. The address opens the welcome screen (`index.html`). Scroll to the very bottom and use **Continue to RedFCU** to reach `home.html`. That button and the footer's **Public resources** link are the only doors between the two halves of the site, so check both directions.
 
 This step is intentionally left to you. The site has not been published, and no repository or Pages setting has been created on your behalf.
 
@@ -261,13 +261,13 @@ The staff panel in section 10 writes this file for you: press Left Alt + F2, cha
 
 The numbers still hard-coded in the HTML are fallbacks, used only if `release.json` cannot be loaded (JavaScript disabled, or the page opened from disk). They are not read when the file is available, so they do not need updating on every release. Refresh them occasionally so a visitor without JavaScript does not see something ancient.
 
-If the release changes the package file name, update `package` in the same file. If the requirements or supported model list change, update the "What Red FCU needs" card to match `Computer Specs.md`.
+If the release changes the package file name, update `package` in the same file. If the requirements or supported model list change, update the "What RedFCU needs" card to match `Computer Specs.md`.
 
 If the Discord invite ever expires, regenerate it in Discord and replace the address in both pages above. A dead invite is worse than no invite, so check it occasionally.
 
 ### Ollama
 
-The Ollama installer link (`https://ollama.com/download/OllamaSetup.exe`) and the Ollama site links are genuine Ollama destinations and are clearly labelled as third-party. Leave them attributed to Ollama and do not present them as Red FCU downloads.
+The Ollama installer link (`https://ollama.com/download/OllamaSetup.exe`) and the Ollama site links are genuine Ollama destinations and are clearly labelled as third-party. Leave them attributed to Ollama and do not present them as RedFCU downloads.
 
 ---
 
@@ -420,13 +420,13 @@ The applicant sends that file to staff. An `admin` or `owner` signs in, presses 
 
 On decline, the tool closes the review, builds a message (with an optional reason), and reminds staff to message the applicant. No badge is produced.
 
-On accept, the tool creates a verification ID and a message to send, and offers the official badge image for download. Creator IDs use `RFCU-VC-YYYY-XXXXXX` and `assets/img/redfcu-verified-creator-badge.png`; community IDs use `RFCU-VCM-YYYY-XXXXXX` and `assets/img/redfcu-verified-community-badge.png`. The badge preview is itself a download link, and **Download badge PNG** saves the file with the verification ID in its name. In Chrome and Edge the click opens a save dialog and writes the PNG directly; other browsers use their normal download. A browser that cannot download an image will open it instead, so the panel also says to right-click or long-press and choose **Save image as…**. The tool does not generate or alter badges; both images are supplied by Red FCU. Staff send the message and the badge file to the applicant themselves. Nothing is sent or published automatically, and the site stores no application.
+On accept, the tool creates a verification ID and a message to send, and offers the official badge image for download. Creator IDs use `RFCU-VC-YYYY-XXXXXX` and `assets/img/redfcu-verified-creator-badge.png`; community IDs use `RFCU-VCM-YYYY-XXXXXX` and `assets/img/redfcu-verified-community-badge.png`. The badge preview is itself a download link, and **Download badge PNG** saves the file with the verification ID in its name. In Chrome and Edge the click opens a save dialog and writes the PNG directly; other browsers use their normal download. A browser that cannot download an image will open it instead, so the panel also says to right-click or long-press and choose **Save image as…**. The tool does not generate or alter badges; both images are supplied by RedFCU. Staff send the message and the badge file to the applicant themselves. Nothing is sent or published automatically, and the site stores no application.
 
 The reader is deliberately strict: 256 KB maximum, exact `type`, `version: 1`, required strings and length limits, an `https` URL with a dot in the host name, known roles and platforms, a Discord or Yapin user ID when one is supplied, all five confirmations set to `true`, and no application text inserted as HTML. A malformed or edited file is refused rather than displayed. The file is unsigned and self-reported, so confirming the sender and checking the evidence is the reviewer's job; the file itself proves nothing.
 
 ### Withdrawing a verification
 
-A badge image that has already been sent cannot be deleted or recalled. The staff panel therefore includes **Withdraw a verification** for `admin` and `owner`. Enter the verification ID, choose the program, add the recipient name and the project or community name, and optionally a reason. The tool generates a message saying that the ID is no longer valid, that the badge must be taken down, and that Red FCU cannot remove copies already held. Copy and send it yourself; the site stores no revocation list, so keep a private record of every withdrawal.
+A badge image that has already been sent cannot be deleted or recalled. The staff panel therefore includes **Withdraw a verification** for `admin` and `owner`. Enter the verification ID, choose the program, add the recipient name and the project or community name, and optionally a reason. The tool generates a message saying that the ID is no longer valid, that the badge must be taken down, and that RedFCU cannot remove copies already held. Copy and send it yourself; the site stores no revocation list, so keep a private record of every withdrawal.
 
 The tool accepts IDs in the form `RFCU-VC-YYYY-XXXXXX` or `RFCU-VCM-YYYY-XXXXXX`. It cannot confirm that an ID was ever issued, because the site has no database. Withdrawal is a permission change and a record-keeping action, not a technical deletion.
 
@@ -472,12 +472,12 @@ The old code stops working as soon as the new hash is published. Whoever can upl
 2. **Creator attribution** — the site names no individual. It credits "the project team". Adjust only if you want a public name or handle on the About page.
 3. **Screenshots** — the site uses no product screenshots, so it cannot show an interface that is out of date. The repository has screenshots; if you want them here, save the images into `assets/` and add them with real captions. Do not hotlink GitHub.
 4. **Repository name and production URL** — assumed to be `RedFCU.web`. There is no `sitemap.xml`, `robots.txt`, `og:url`, or canonical link because the final address is not known. Add them once it is.
-5. **Free-project wording** — the site describes Red FCU as free to use under the RFCUFUL. Adjust if the Asset Store release changes that.
+5. **Free-project wording** — the site describes RedFCU as free to use under the RFCUFUL. Adjust if the Asset Store release changes that.
 6. **Repository license file** — the `LICENSE` file in the GitHub repository still contains the earlier MIT-style text. A matching `LICENSE` now exists in this copy: it is the RFCUFUL 1.0.0, extracted word for word from the full text on `licensing.html`. Upload it to the repository root and commit so the repository and the site agree.
 7. **Logo** — done. The supplied emblem is in `assets/img/`, wired into the header, footer, browser tab, iOS home screen, and the About page. If the artwork changes, replace `red-fcu-logo.png` and regenerate the other sizes from it. One caution: the emblem is badge-shaped with a star and the word "Federal", which reinforces the official-agency reading the notices exist to deny. A less badge-like mark would carry less risk of confusion.
 8. **Staff allowlist** — the placeholder account has been replaced by the real owner account (`notnewman191`), and its code is stored as a PBKDF2 value (600,000 iterations, per-account salt). Changing that code means generating a new one in the panel (section 10) and committing `staff.json`. The previous four-word code was rotated out when the derivation changed.
 9. **Renaming the identifiers** — the package, repository, and contact address still carry "CodePilot" (listed in section 2). Renaming any of them is a separate job with real consequences: a new package name breaks saved download links, and a repository rename breaks every GitHub URL on the site and needs the `404.html` path updated.
-10. **Legal caution about the name** — "Red Federal Code Union" contains "Federal", "Code", and "Union", and the short form "Red FCU" reads like a credit union. In several countries, using "federal", "bank", "credit union", or "union" in a business or product name is restricted, and the notices on this site are a disclaimer, not a legal clearance. If the project ever takes money, registers a company, or ships to a wide audience, have a local lawyer check the name before relying on it.
+10. **Legal caution about the name** — "Red Federal Code Union" contains "Federal", "Code", and "Union", and the short form "RedFCU" reads like a credit union. In several countries, using "federal", "bank", "credit union", or "union" in a business or product name is restricted, and the notices on this site are a disclaimer, not a legal clearance. If the project ever takes money, registers a company, or ships to a wide audience, have a local lawyer check the name before relying on it.
 11. **Public resource contacts** — the welcome screen was built from the supplied list reviewed on November 18, 2026. Phone numbers, hours, eligibility, and web addresses change. Re-check the official sites before moving that date forward, and do not mark the NCMH number `CONFIRMED` without the provider's own confirmation. `Find A Helpline` is intentionally `CONFIRMED`: it is a website that points visitors to the crisis line for their country, so it has no single number to verify and none should be added to it.
 12. **Program statuses** - Verified Creator is open at `creator-apply.html` and Verified Community is open at `community-apply.html`; both forms send nothing and produce only a JSON file for staff. All other programs are planned, and `community-hosting.html` is closed until further notice. Keep those statuses and notices accurate. Do not add a form, email address, or submission route to a closed program, and do not imply guaranteed acceptance. When another program opens, follow the checklist in section 2, update `programs.html`, and keep the pages consistent with the banner and `about.html#name`.
 
@@ -485,14 +485,14 @@ The old code stops working as soon as the new hash is published. Whoever can upl
 
 ## 12. The license (RFCUFUL)
 
-Red FCU is licensed under the **Red FCU Free Use License (RFCUFUL) 1.0.0**, a custom license written for this project. It is **source-available, not open source**, and the site says so in several places.
+RedFCU is licensed under the **RedFCU Free Use License (RFCUFUL) 1.0.0**, a custom license written for this project. It is **source-available, not open source**, and the site says so in several places.
 
 What that means for editing the site:
 
-- Never describe Red FCU as "open source", "OSI-approved", or "MIT licensed". The current wording is "free to use", "custom source-available license", or the full license name.
+- Never describe RedFCU as "open source", "OSI-approved", or "MIT licensed". The current wording is "free to use", "custom source-available license", or the full license name.
 - The full license text is reproduced on `licensing.html`, in a `.license-doc` block. It was transcribed from the text supplied by the rights holder; do not rewrite, summarise, or reorder it. If a new license version is published, replace that block and update the version number in the `lic-meta` list and the page's hero line.
 - The repository-root `LICENSE` file holds the same text as plain text, generated from that block. If you edit the block, regenerate `LICENSE` so the two stay identical; do not maintain them by hand in parallel.
-- Section 2 of the supplied text defines "Red FCU" twice, with the second line clearly meant to read "Software". It is reproduced as written. If the rights holder issues a corrected version, replace the whole block rather than patching one line.
+- Section 2 of the supplied text defines "RedFCU" twice, with the second line clearly meant to read "Software". It is reproduced as written. If the rights holder issues a corrected version, replace the whole block rather than patching one line.
 - The summary above the text ("What you can do" / "What needs written permission") is plain-language, not legal wording. Keep it consistent with the license text if the text changes.
 - Do not claim that copies may be redistributed or sold. The license permits private, free sharing only, and the site's Downloads, About, and Licensing pages all restate that.
 - Public redistribution or branding use requires prior written permission, so link permission requests to GitHub Issues or `CodePilot-Unity.AI@proton.me` (both are the rights holder's channels).
