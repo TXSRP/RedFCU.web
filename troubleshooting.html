@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Troubleshooting — Red FCU</title>
-  <meta name="description" content="Checks for common Red FCU setup problems: package import, Ollama connection, models, performance, and what to include in a bug report.">
+  <title>Troubleshooting RedFCU</title>
+  <meta name="description" content="Checks for common RedFCU setup problems: package import, Ollama connection, models, performance, and what to include in a bug report.">
   <meta name="theme-color" content="#080a10" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Red FCU">
-  <meta property="og:title" content="Troubleshooting — Red FCU">
-  <meta property="og:description" content="Checks for common Red FCU setup problems, from importing the package to getting Ollama and a local model running.">
+  <meta property="og:site_name" content="RedFCU">
+  <meta property="og:title" content="Troubleshooting RedFCU">
+  <meta property="og:description" content="Checks for common RedFCU setup problems, from importing the package to getting Ollama and a local model running.">
   <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="assets/img/red-fcu-logo-192.png" sizes="192x192" type="image/png">
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
@@ -23,12 +23,12 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <aside class="site-banner" aria-label="Important notice">
-    <p class="container"><strong>Independent software project.</strong> Red Federal Code Union (Red FCU) is <strong>not</strong> a bank, credit union, or financial institution, and offers no financial products or services. It is <strong>not</strong> a government body, law-enforcement agency, or federal authority, and is <strong>not</strong> affiliated with, endorsed by, or acting for any government, regulator, police force, or financial institution. The name is branding only. Red FCU may offer project verification, creator verification, copyright assistance, project protection, and recommendation programs. These programs are informational and administrative in nature only. They do not constitute legal services, legal advice, legal representation, government certification, copyright registration, trademark registration, law-enforcement activity, or any determination of legal rights. <a href="about.html#name">Full notice</a>.</p>
+    <p class="container"><strong>Independent software project.</strong> Red Federal Code Union (RedFCU) is <strong>not</strong> a bank, credit union, or financial institution, and offers no financial products or services. It is <strong>not</strong> a government body, law-enforcement agency, or federal authority, and is <strong>not</strong> affiliated with, endorsed by, or acting for any government, regulator, police force, or financial institution. The name is branding only. RedFCU may offer project verification, creator verification, copyright assistance, project protection, and recommendation programs. These programs are informational and administrative in nature only. They do not constitute legal services, legal advice, legal representation, government certification, copyright registration, trademark registration, law-enforcement activity, or any determination of legal rights. <a href="about.html#name">Full notice</a>.</p>
   </aside>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="home.html" aria-label="Red FCU home">
+      <a class="brand" href="home.html" aria-label="RedFCU home">
         <img src="assets/img/red-fcu-logo-96.png" alt="" width="28" height="28">
         <span class="brand-name">Red <span class="brand-accent">FCU</span></span>
       </a>
@@ -75,14 +75,14 @@
       <div class="container">
         <p class="kicker">Troubleshooting</p>
         <h1>Troubleshooting</h1>
-        <p class="lede">The complete installation walkthrough lives in the Red FCU Discord. This page covers the checks that apply to any install, and what to send when you ask for help.</p>
+        <p class="lede">The complete installation walkthrough lives in the RedFCU Discord. This page covers the checks that apply to any install, and what to send when you ask for help.</p>
       </div>
     </div>
 
     <div class="page-body">
       <div class="container">
         <div class="prose">
-          <p>Red FCU is a Unity Editor extension that talks to a model running in Ollama. When something fails, check the three pieces separately: Unity and the package, then Ollama, then the model itself.</p>
+          <p>RedFCU is a Unity Editor extension that talks to a model running in Ollama. When something fails, check the three pieces separately: Unity and the package, then Ollama, then the model itself.</p>
 
           <h2>Check the basics first</h2>
           <ul>
@@ -100,10 +100,10 @@
           <p>In Unity, use <strong>Assets &rsaquo; Import Package &rsaquo; Custom Package</strong> and select the file. <a href="getting-started.html">Getting Started</a> walks through the order, including installing Ollama and a model.</p>
           <p>If Unity reports errors while importing, copy the exact message from the Console before changing anything else. Menu names and settings can differ between releases, so follow the project's Discord walkthrough for the release you installed if it differs from this page.</p>
 
-          <h2>Red FCU cannot reach a model</h2>
-          <p>Ollama has to be running. The project's README states that if Ollama is closed, Red FCU cannot communicate with the local model until it is running again.</p>
+          <h2>RedFCU cannot reach a model</h2>
+          <p>Ollama has to be running. The project's README states that if Ollama is closed, RedFCU cannot communicate with the local model until it is running again.</p>
           <p>Next, confirm the model is installed. <code>ollama list</code> shows the models available locally, and <code>ollama pull</code> downloads one. Those commands and Ollama's setup belong to <a href="https://docs.ollama.com/" rel="noopener">Ollama's documentation<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a>.</p>
-          <p>Red FCU does not bundle Ollama, and this site does not host it. If Ollama itself will not start or cannot download a model, use Ollama's own support channels rather than the Red FCU issue tracker.</p>
+          <p>RedFCU does not bundle Ollama, and this site does not host it. If Ollama itself will not start or cannot download a model, use Ollama's own support channels rather than the RedFCU issue tracker.</p>
 
           <h2>The model is slow or memory runs out</h2>
           <p>Model performance and hardware requirements vary significantly with model size. A larger model needs more memory and generally takes longer to respond than a smaller one from the same list.</p>
@@ -114,12 +114,12 @@
           <p>Do not guess at a fix from an error code alone. The Discord walkthrough and the issue tracker are the places to confirm what a message means for your release.</p>
 
           <h2>What to include in a report</h2>
-          <p>Bugs and feature requests belong in <a href="https://github.com/TXSRP/CodePilot/issues" rel="noopener">GitHub Issues<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a> or the <a href="https://discord.gg/SuBuRVS6PK" rel="noopener">Red FCU Discord<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a>. A useful report includes:</p>
+          <p>Bugs and feature requests belong in <a href="https://github.com/TXSRP/CodePilot/issues" rel="noopener">GitHub Issues<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a> or the <a href="https://discord.gg/SuBuRVS6PK" rel="noopener">RedFCU Discord<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a>. A useful report includes:</p>
           <ul>
             <li>What happened, and what you expected instead.</li>
             <li>The steps that reproduce the problem.</li>
             <li>The model you were using.</li>
-            <li>Your Unity version, and the Red FCU version you installed.</li>
+            <li>Your Unity version, and the RedFCU version you installed.</li>
             <li>Logs and screenshots, where they help explain the problem.</li>
           </ul>
           <p>Security issues should be reported privately in the project's Discord, not in a public channel or a public issue. Share only the logs and screenshots needed to explain the problem.</p>
@@ -128,7 +128,7 @@
             <h2>Still stuck?</h2>
             <p>The Discord server is the project's main support channel and holds the complete installation walkthrough. GitHub Issues is better for bugs that other people can search later.</p>
             <div class="btn-row">
-              <a class="btn btn-primary" href="https://discord.gg/SuBuRVS6PK" rel="noopener">Join the Red FCU Discord<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a>
+              <a class="btn btn-primary" href="https://discord.gg/SuBuRVS6PK" rel="noopener">Join the RedFCU Discord<span class="ext" aria-hidden="true">&#8599;</span><span class="sr-only"> (external site)</span></a>
               <a class="btn btn-secondary" href="community.html">Community &amp; Support</a>
             </div>
           </div>
@@ -143,7 +143,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a class="brand" href="home.html" aria-label="Red FCU home">
+          <a class="brand" href="home.html" aria-label="RedFCU home">
             <img src="assets/img/red-fcu-logo-96.png" alt="" width="28" height="28">
             <span class="brand-name">Red <span class="brand-accent">FCU</span></span>
           </a>
@@ -179,8 +179,8 @@
       </div>
 
       <div class="footer-bottom">
-        <p class="footer-copy">&copy; 2026 Red FCU. All rights reserved for original website content, design, graphics, and branding, except where otherwise stated. Unauthorized reproduction or redistribution of protected website materials is prohibited without permission.</p>
-        <p>Red FCU &middot; <span data-year>2026</span></p>
+        <p class="footer-copy">&copy; 2026 RedFCU. All rights reserved for original website content, design, graphics, and branding, except where otherwise stated. Unauthorized reproduction or redistribution of protected website materials is prohibited without permission.</p>
+        <p>RedFCU &middot; <span data-year>2026</span></p>
         <p>Static site, hand-built. <a href="privacy.html">Privacy details</a>.</p>
       </div>
     </div>
